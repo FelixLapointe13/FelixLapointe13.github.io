@@ -1,0 +1,27 @@
+/* ==========================================================================
+   header / component
+   ========================================================================== */
+
+.header {
+    background-color: var(--color-bg-primary);
+}
+
+.header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    .logo__vgm {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-md);
+    }
+
+    .header__menu {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-lg);
+        list-style: none;
+    }
+}
