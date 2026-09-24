@@ -1,0 +1,32 @@
+.header {
+    background-color: var(--color-bg-primary);
+    padding: 20px 0;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav__gauche {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        img {
+            height: 64px;
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        list-style: none;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+        }
+    }
+}
