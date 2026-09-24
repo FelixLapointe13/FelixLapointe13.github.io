@@ -1,6 +1,5 @@
 //FONTS
 // ici sont chargé les fonts
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
@@ -28,10 +27,4 @@
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
-@import 'components/header';
-@import 'components/hero';
-@import 'components/separateur';
-@import 'components/jeux-artistes';
-@import 'components/cartes';
 @import 'components/icons';
-@import 'components/footer';
