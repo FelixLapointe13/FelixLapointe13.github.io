@@ -456,6 +456,92 @@ a:hover {
   margin: 0 auto;
 }
 
+.cartes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  row-gap: 60px;
+}
+@media (width <= 768px) {
+  .cartes {
+    grid-template-columns: 1fr;
+  }
+}
+
+.carte {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.carte .carte__media {
+  width: 100%;
+  height: 100%;
+}
+.carte .carte__media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.carte .carte__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: end;
+  transform: translateY(500px);
+  transition: all 0.4s ease-in-out;
+}
+.carte .carte__content h3,
+.carte .carte__content p,
+.carte .carte__content .icon {
+  color: var(--color-white);
+}
+.carte .carte__content hr {
+  width: 100%;
+}
+.carte .carte__content .icon {
+  transition: all 0.4s ease-in;
+}
+.carte .carte__content .icon:hover {
+  transform: rotate(180deg);
+}
+.carte .content__projet {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-grow: 1;
+}
+.carte .content__texte {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+}
+.carte .top__content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.carte:nth-child(even) {
+  transform: translateY(250px);
+}
+@media (width <= 768px) {
+  .carte:nth-child(even) {
+    transform: translateY(0);
+  }
+}
+.carte:hover .carte__content {
+  transform: translateY(0);
+}
+
 /* ==========================================================================
    icons / component
    ========================================================================== */
@@ -689,6 +775,14 @@ a:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.hero .content__projet {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.hero .content__projet p {
+  width: 300px;
+}
 
 .section {
   padding: 100px 0;
@@ -743,6 +837,7 @@ a:hover {
 
 .moi {
   position: relative;
+  overflow: hidden;
 }
 .moi .moi__media {
   position: absolute;
@@ -845,6 +940,7 @@ a:hover {
 
 .candidature {
   padding-bottom: 0;
+  overflow: hidden;
 }
 .candidature .wrapper {
   position: relative;
@@ -886,5 +982,9 @@ a:hover {
   .candidature .candidature__media {
     justify-content: center;
   }
+}
+
+.grille__projets {
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */
